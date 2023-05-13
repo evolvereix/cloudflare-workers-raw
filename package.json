@@ -1,0 +1,19 @@
+{
+  "name": "raw",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "engines": {
+    "node": ">=16.13.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230511.0",
+    "typescript": "^5.0.4",
+    "wrangler": "2.16.0"
+  }
+}
